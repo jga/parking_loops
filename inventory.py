@@ -2,7 +2,7 @@
 PARKING_SPACE_COUNTS = [10, 50, 30]
 
 def add_capacity(parking_space_counts):
-    for ints in PARKING_SPACE_COUNTS:
+    for counts in PARKING_SPACE_COUNTS:
         print(ints + 1)
 
 
