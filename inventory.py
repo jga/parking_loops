@@ -9,8 +9,8 @@ PARKING_INVENTORIES = [
 
 def add_capacity(parking_inventories):
     for count in PARKING_INVENTORIES:
-        print(count['lot_name'],'', str(count['space_count'] * 10 / 100 + count['space_count']))
-    print('Done.')
+        print(count['lot_name'],'', str(int(count['space_count'] * 10 / 100 + count['space_count'])))
+        print('Done.')
 
 
 add_capacity(PARKING_INVENTORIES)
