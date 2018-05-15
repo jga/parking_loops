@@ -7,9 +7,9 @@ PARKING_INVENTORIES = [
 ]
 
 
-def add_capacity(parking_inventories):
+def add_capacity(inventories):
     # Changed the name to inventory to more clearly reflect what each element in the list represents
-    for inventory in PARKING_INVENTORIES:
+    for inventory in inventories:
         # Cleaned up your math to make it simpler. Let's talk it over if it's unclear why this is
         # a mathematical equivalent to your work
         updated_space_count = int(inventory['space_count'] * 1.1)
