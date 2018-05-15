@@ -8,10 +8,16 @@ PARKING_INVENTORIES = [
 
 
 def add_capacity(parking_inventories):
+    for count in PARKING_INVENTORIES:
+        new_count = count['space_count'] * 10 / 100 + count['space_count']
+        print(new_count)
+
+
     # loop through each inventory, add 10% capacity to the existing space count, rount to nearest integer,
     #  and print out the name and new inventory. Then print when function is done
     print('Done.')
 
 
 add_capacity(PARKING_INVENTORIES)
+
 
