@@ -1,5 +1,5 @@
 
-# I've transformed the parking space inventories into dictionaries with lot_name and space_count keys
+
 PARKING_INVENTORIES = [
     {'lot_name': 'A', 'space_count': 10},
     {'lot_name': 'B', 'space_count': 50},
