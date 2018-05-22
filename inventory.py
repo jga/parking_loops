@@ -7,17 +7,23 @@ PARKING_INVENTORIES = [
 ]
 
 
+def sum_inventory(inventories):
+    return sum([inventory['space_count'] for inventory in inventories])
+
+
 def add_capacity(inventories):
+    # original_sum = sum of dict space_count
     # Changed the name to inventory to more clearly reflect what each element in the list represents
+    original_sum = sum_inventory(inventories)
+    new_sum = 0
     for inventory in inventories:
-        # Cleaned up your math to make it simpler. Let's talk it over if it's unclear why this is
-        # a mathematical equivalent to your work
         updated_space_count = int(inventory['space_count'] * 1.1)
+        new_sum += updated_space_count
         # Using the format method of a string to create a mini-template
         output_message = 'Lot {0} spaces: {1}'.format(inventory['lot_name'], updated_space_count)
         print(output_message)
-    # Moved the final print. Only want one print of "Done". The entire function completes only once per call. If it's in the loop scope,
-    # it prints every iteration, creating 3 "Done." messages.
+    # Print original_sum + output_message
+    print('Original Count {0} New Count {1}'.format(original_sum, new_sum))
     print('Done.')
 
 
